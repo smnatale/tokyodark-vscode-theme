@@ -17,8 +17,8 @@ jobs:
       - name: Install dependencies
         run: npm install -g vsce
 
-      - name: Run build 
-        run: vsce build
+      - name: Run package 
+        run: vsce package
 
       - name: Publish build
         run: vsce publish patch --pat=$PAT

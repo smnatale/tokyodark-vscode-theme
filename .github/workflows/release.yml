@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install -g vsce
+
+      - name: Run build 
+        run: vsce build
+
+      - name: Publish build
+        run: vsce publish patch --pat=$PAT
+        env:
+          PAT: ${{ secrets.PAT }}

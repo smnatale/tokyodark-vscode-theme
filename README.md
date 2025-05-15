@@ -36,6 +36,11 @@ Font used in the screenshot is [CaskaydiaCove Nerd Font Mono.](https://formulae.
 | ![#24283b](https://place-hold.it/15/24283b/24283b?text=+) `#06070A`                             | Sidebar Background                                                                                                      |
 | ![#1a1b26](https://place-hold.it/15/1a1b26/1a1b26?text=+) `#090B10`                             | Editor Background                                                                                                       |
 
+<h1>
+Original Theme
+</h1>
+https://github.com/enkia/tokyo-night-vscode-theme
+
 <br><br>
 **Enjoy!**
 
